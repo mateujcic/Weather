@@ -1,0 +1,97 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-size: cover;
+  padding: 1.5rem;
+  border-radius: 22px;
+  width: 60%;
+  height: 18rem;
+  justify-content: space-evenly;
+  -webkit-box-shadow: 0px 0px 22px 0px rgba(66, 68, 90, 0.24);
+  -moz-box-shadow: 0px 0px 22px 0px rgba(66, 68, 90, 0.24);
+  box-shadow: 0px 0px 22px 0px rgba(66, 68, 90, 0.24);
+}
+
+.sunnyBg{
+  background-image: url(/weatherTypes/sunny.jpg);
+}
+.rainyBg{
+  background-image: url(/weatherTypes/rain.jpg);
+
+}
+.windyBg{
+  background-image: url(/weatherTypes/windy.jpg);
+}
+.cloudyBg{
+  background-image: url(/weatherTypes/cloudy.jpg);
+}
+
+.miniCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.miniCard {
+  background-color: white;
+  border-radius: 10px;
+  /* margin-right: 1rem; */
+  padding: 0.5rem 1.5rem;
+  -webkit-box-shadow: 0px 0px 22px 0px rgba(66, 68, 90, 0.5);
+  -moz-box-shadow: 0px 0px 22px 0px rgba(66, 68, 90, 0.5);
+  box-shadow: 0px 0px 22px 0px rgba(66, 68, 90, 0.5);
+}
+
+.card > p {
+  margin: 0;
+}
+.miniCard > p {
+  margin: 0;
+}
+.card > p {
+  margin: 0;
+}
+.text {
+  font-weight: 500;
+  text-align: center;
+  margin: 3rem;
+}
+.city {
+  font-weight: 900;
+}
+
+.temperature {
+  font-size: 2.5em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem !important;
+}
+
+.symbolPhrase {
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 4rem !important;
+}
+
+.description {
+  font-size: 0.7em;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 500;
+}
+
+.miniValue {
+  font-size: 1.25em;
+  font-weight: 600 !important;
+  text-align: center;
+}
