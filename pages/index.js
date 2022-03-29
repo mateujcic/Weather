@@ -1,10 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
 import Autocomplete from "@mui/material/Autocomplete";
-import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import styles from "../styles/Home.module.css";
-import React, { useEffect } from "react";
+import React from "react";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";

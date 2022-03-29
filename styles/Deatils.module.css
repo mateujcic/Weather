@@ -23,6 +23,9 @@
 .sunnyBg{
   background-image: url(/weatherTypes/sunny.jpg);
 }
+.sunnyNightBg{
+  background-image: url(/weatherTypes/sunnyNightBg.jpg);
+}
 .rainyBg{
   background-image: url(/weatherTypes/rain.jpg);
 
@@ -32,6 +35,9 @@
 }
 .cloudyBg{
   background-image: url(/weatherTypes/cloudy.jpg);
+}
+.cloudyNightBg{
+  background-image: url(/weatherTypes/cloudyNightBg.jpg);
 }
 
 .miniCardContainer {
@@ -83,6 +89,22 @@
   margin-bottom: 4rem !important;
 }
 
+.temperatureNight{
+  font-size: 2.5em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem !important;
+  color:white
+}
+.symbolPhraseNight {
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 4rem !important;
+  color:white
+
+}
 .description {
   font-size: 0.7em;
   margin-top: 0.25rem !important;
