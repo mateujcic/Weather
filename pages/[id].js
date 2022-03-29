@@ -42,7 +42,6 @@ export const getStaticProps = async (context) => {
   );
 
   const dataCity = await resCity.json();
-  console.log("city");
   return {
     props: {
       city: {
