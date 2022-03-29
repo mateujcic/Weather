@@ -14,7 +14,7 @@ export const getStaticProps = async (context) => {
   const res = await fetch(
     "https://foreca-weather.p.rapidapi.com/current/" +
       id +
-      "?alt=0&tempunit=C&windunit=MS&tz=Europe%2FBerlin&lang=en",
+      "?alt=0&tempunit=C&windunit=MS&lang=en",
     {
       method: "GET",
       headers: {
@@ -61,28 +61,29 @@ function Details({ city }) {
     console.log(time.substr(0, time.indexOf(":")));
     console.log(time.substr(0, time.indexOf(":")) >= 18);
     if (weather === "clear") {
-      // if (
-      //   (time.substr(0, time.indexOf(":"))) <= 6 ||
-      //   (time.substr(0, time.indexOf(":"))) >= 18
-      // ) {
-      //   setImage(styles.sunnyNightBg);
-      //   setStyle(false);
-      // } else
-      setImage(styles.sunnyBg);
-      setStyle(true);
+      if (
+        time.substr(0, time.indexOf(":")) <= 6 ||
+        time.substr(0, time.indexOf(":")) >= 18
+      ) {
+        setImage(styles.sunnyNightBg);
+        setStyle(false);
+      } else {
+        setImage(styles.sunnyBg);
+        setStyle(true);
+      }
     } else if (weather === "rain") {
       setImage(styles.rainyBg);
     } else {
-      // if (
-      //   (time.substr(0, time.indexOf(":"))) <= 6 ||
-      //   (time.substr(0, time.indexOf(":"))) >= 18
-      // ) {
-      //   setImage(styles.cloudyNightBg);
-      //   setStyle(false);
-
-      // } else
-      setImage(styles.cloudyBg);
-      setStyle(true);
+      if (
+        time.substr(0, time.indexOf(":")) <= 6 ||
+        time.substr(0, time.indexOf(":")) >= 18
+      ) {
+        setImage(styles.cloudyNightBg);
+        setStyle(false);
+      } else {
+        setImage(styles.cloudyBg);
+        setStyle(true);
+      }
     }
     if (wind > 5) {
       setImage(styles.windyBg);
