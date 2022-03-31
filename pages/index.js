@@ -30,10 +30,10 @@ function Home({ currentCity }) {
     );
     const data = await response.json();
     try {
-      const first5Locations = data.locations.slice(0, 5);
+      const first5Locations = data.locations.slice(0, 10);
       setLocations(first5Locations);
     } catch (TypeError) {
-      console.log("error");
+      console.log("TypeError:" + TypeError);
     }
   };
 
