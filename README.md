@@ -1,4 +1,4 @@
-## Self guided - Weather App
+## Self Guided Study - Weather App
 
 Weather app is an application developed in Next.js whose main function is fetching weather forecast data for a specific city.
 
