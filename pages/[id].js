@@ -75,7 +75,7 @@ function Details({ city }) {
       weather === "showers"
     ) {
       setImage(styles.rainyBg);
-    } else if (weather === "wet snow showers") {
+    } else if (weather === "wet snow showers" || weather === "snow") {
       setImage(styles.snowyBg);
     } else {
       if (
