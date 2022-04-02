@@ -20,24 +20,26 @@
   box-shadow: 0px 0px 22px 0px rgba(66, 68, 90, 0.24);
 }
 
-.sunnyBg{
+.sunnyBg {
   background-image: url(/weatherTypes/sunny.jpg);
 }
-.sunnyNightBg{
+.sunnyNightBg {
   background-image: url(/weatherTypes/sunnyNightBg.jpg);
 }
-.rainyBg{
+.rainyBg {
   background-image: url(/weatherTypes/rain.jpg);
-
 }
-.windyBg{
+.windyBg {
   background-image: url(/weatherTypes/windy.jpg);
 }
-.cloudyBg{
+.cloudyBg {
   background-image: url(/weatherTypes/cloudy.jpg);
 }
-.cloudyNightBg{
+.cloudyNightBg {
   background-image: url(/weatherTypes/cloudyNightBg.jpg);
+}
+.snowyBg {
+  background-image: url(/weatherTypes/snowyBg.jpg);
 }
 
 .miniCardContainer {
@@ -89,12 +91,12 @@
   margin-bottom: 4rem !important;
 }
 
-.temperatureNight{
+.temperatureNight {
   font-size: 2.5em;
   font-weight: 600;
   text-align: center;
   margin-top: 0.5rem !important;
-  color:white
+  color: white;
 }
 .symbolPhraseNight {
   text-align: center;
@@ -102,8 +104,7 @@
   font-weight: 500;
   text-transform: capitalize;
   margin-bottom: 4rem !important;
-  color:white
-
+  color: white;
 }
 .description {
   font-size: 0.7em;

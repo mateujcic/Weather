@@ -33,7 +33,6 @@
   color: white;
 }
 
-
 .form {
   display: flex;
   justify-content: space-between;
@@ -57,9 +56,6 @@
   animation: load 1s;
 }
 
-
-
-.links{
+.links {
   cursor: pointer !important;
 }
-

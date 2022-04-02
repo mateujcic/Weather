@@ -58,8 +58,6 @@ function Details({ city }) {
   const [image, setImage] = useState();
   const [style, setStyle] = useState(true);
   function changeBgImage(weather, wind) {
-    console.log(time.substr(0, time.indexOf(":")));
-    console.log(time.substr(0, time.indexOf(":")) >= 18);
     if (weather === "clear") {
       if (
         time.substr(0, time.indexOf(":")) <= 6 ||
@@ -71,8 +69,14 @@ function Details({ city }) {
         setImage(styles.sunnyBg);
         setStyle(true);
       }
-    } else if (weather === "rain" || weather === "light rain") {
+    } else if (
+      weather === "rain" ||
+      weather === "light rain" ||
+      weather === "showers"
+    ) {
       setImage(styles.rainyBg);
+    } else if (weather === "wet snow showers") {
+      setImage(styles.snowyBg);
     } else {
       if (
         time.substr(0, time.indexOf(":")) <= 6 ||
@@ -85,19 +89,19 @@ function Details({ city }) {
         setStyle(true);
       }
     }
-    if (wind > 5) {
+    if (wind > 6) {
       setImage(styles.windyBg);
     }
   }
 
   useEffect(() => {
     let timeData = city.time;
-    console.log(timeData);
     time = city.time.substr(timeData.indexOf("T") + 1);
     changeBgImage(city.symbolPhrase);
-    if (city.windSpeed > 6) {
-      changeBgImage(city.symbolPhrase, city.windSpeed);
-    }
+    // if (city.windSpeed > 6) {
+    //   changeBgImage(city.symbolPhrase, city.windSpeed);
+    // }
+    console.log(city);
   });
 
   return (
