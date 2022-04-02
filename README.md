@@ -4,7 +4,7 @@ Weather app is an application developed in Next.js whose main function is fetchi
 
 ### How to run
 
-1. Open the weather folder in VSCode.
+1. Open the weather folder in Visual Studio Code.
 2. In the built-in terminal run ```$ npm install```.
 3. Once the dependencies have installed run ```$ npm run dev``` to start the app.
 
